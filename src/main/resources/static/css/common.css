@@ -1,0 +1,295 @@
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+.carousel {
+    z-index: -99;
+}
+
+.carousel-item {
+    position: fixed;
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+}
+
+.top-nav-collapse {
+    background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    }
+}
+
+h1 {
+    letter-spacing: 8px;
+}
+
+h5 {
+    letter-spacing: 3px;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #ec407a !important;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-size: 1.5rem;
+}
+
+.pagination .page-item.active .page-link:hover {
+    color: #fff;
+    background-color: #ee578a;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-size: 1.5rem;
+}
+
+.dataTables_info {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.table-header-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.table-inner-text {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.pagination .page-item .page-link {
+    font-size: 1.3rem;
+    color: #212529;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.pagination .page-item .page-link:hover {
+    font-size: 1.3rem;
+    color: #212529;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    transform: scale(1.1);
+}
+
+input[type="search"] {
+    font-size: 1.4rem;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.btn-text {
+    letter-spacing: 1px;
+}
+
+.row-border {
+    background-color: white !important;
+    border-radius: 8px !important;
+    opacity: 95% !important;
+}
+
+tr {
+    background-color: white !important;
+    border-radius: 8px !important;
+    opacity: 95% !important;
+}
+
+td {
+    background-color: white !important;
+    border-radius: 8px !important;
+    opacity: 95% !important;
+}
+
+#doctorsTable_wrapper {
+    background-color: white !important;
+}
+
+#doctorsTable {
+    background-color: white !important;
+}
+
+.form-controls-text {
+    margin: .375rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 0rem;
+}
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/hospital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+}
+
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #ec407a;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.contents {
+    opacity: 95%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+@-webkit-keyframes transitionIn {
+    from {
+        opacity: 0;
+        -webkit-transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: rotateX(0);
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
