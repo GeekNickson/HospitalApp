@@ -22,7 +22,7 @@
 
 **Backend**
 
-- PostgresSQL
+- MySQL
 - Spring
 
 ---
@@ -31,4 +31,4 @@
 
 - JSP
 - JQuery
-- CSS
+- Bootstrap
